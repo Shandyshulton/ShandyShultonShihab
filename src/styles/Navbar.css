@@ -1,0 +1,132 @@
+nav {
+  background-color: #0F172A;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  text-transform: uppercase;
+}
+
+nav > .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  width: 35%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 8px;
+}
+
+.menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  gap: 28px;                 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu > ul > li > a {
+  position: relative;
+  display: inline-block;
+  width: auto;               
+  padding: 12px 6px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;              
+  height: 2px;
+  width: 100%;
+  background: #aa392d;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.menu > ul > li > a:hover::after,
+.menu > ul > li > a:focus-visible::after,
+.menu > ul > li > a.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+nav > .wrapper > button {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+nav > .wrapper > button > svg {
+  color: #fff;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu > ul {
+    display: none;
+  }
+
+  .menu.tampil > ul {
+    display: inline;
+  }
+
+  .menu {
+    text-align: right;
+  }
+
+  nav > .wrapper > button {
+    display: inline;
+  }
+
+  .menu > ul {
+    flex-direction: column;
+    background: radial-gradient(circle at center, #2c4478, #192439 100%);
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+  }
+
+  .menu > ul > li {
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .menu > ul > li > a {
+    display: inline-block;
+    padding: 15px 20px 15px 50px;
+    width: 100%;
+  }
+
+  .menu > ul > li > a::after {
+    display: none; 
+  }
+
+  .menu > ul > li > a:hover {
+    background-color: #0F172A;
+    color: #fff;
+  }
+}

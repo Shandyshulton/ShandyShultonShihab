@@ -1,0 +1,161 @@
+/* Container */
+#portfolio {
+  padding: 40px 0 64px;
+}
+#portfolio .wrapper {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+.portfolio-title {
+  font-size: 1.8rem;
+  margin-bottom: 18px;
+}
+
+/* Swiper tweaks */
+.swiper {
+  padding-bottom: 36px; 
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #111827;         
+}
+.swiper-pagination-bullet {
+  opacity: .6;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+#portfolio .swiper-wrapper {
+  align-items: stretch;            
+}
+#portfolio .swiper-slide {
+  height: auto;                     
+  display: flex;                    
+}
+#portfolio .swiper-slide .pf-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;                     
+}
+
+/* Card */
+.pf-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.pf-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+/* Media */
+.pf-media {
+  position: relative;
+  height: 200px;
+  background: #f3f4f6;
+}
+.pf-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+  filter: saturate(1.05);
+  transition: transform .4s ease;
+}
+.pf-media .status-badge {
+  position: absolute;
+  top: 8px;   
+  right: 8px; 
+}
+.pf-card:hover .pf-media img {
+  transform: scale(1.02);
+}
+
+.pf-body {
+  padding: 18px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;                          
+}
+.pf-headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.pf-title {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin: 0;
+}
+.pf-title a {
+  color: #0f172a;
+  text-decoration: none;
+}
+.pf-title a:hover {
+  text-decoration: underline;
+}
+.pf-ext {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+.pf-ext:hover { color: #111827; }
+
+.category-pill {
+  align-self: flex-start;
+  background: #e0f2fe;
+  color: #075985;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.pf-desc {
+  color: #4b5563;
+  font-size: .98rem;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;             
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 4.5em;                 
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;                  /* dorong tags ke bawah agar konsisten */
+}
+.tag {
+  background: #eef2ff;
+  color: #3730a3;
+  outline: 2px solid #3730a3;  
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: .82rem;
+  white-space: nowrap;
+}
+.tag.more {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+@media (min-width: 1280px) {
+  .pf-media { height: 220px; }
+}
+@media (max-width: 480px) {
+  .pf-media { height: 180px; }
+}

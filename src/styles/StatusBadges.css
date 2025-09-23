@@ -1,0 +1,24 @@
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.status-badge.completed {
+  background: #dcfce7; /* soft green */
+  color: #065f46;      /* dark green */
+}
+
+.status-badge.in-progress {
+  background: #fef3c7; /* soft yellow */
+  color: #92400e;      /* dark yellow */
+}
+
+.status-badge.not-completed {
+  background: #fee2e2; /* soft red */
+  color: #b91c1c;      /* dark red */
+}

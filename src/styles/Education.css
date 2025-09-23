@@ -1,0 +1,122 @@
+.education-card {
+  display: flex;
+  background: linear-gradient(to right, #0e1425, #2c4478);
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px auto;
+  will-change: transform, opacity, filter;
+  overflow: hidden; 
+  max-width: 1100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  gap: 40px;
+  text-align: left; 
+}
+
+/* LEFT SIDE */
+.edu-header {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left; 
+}
+
+.edu-header h2 {
+  color: #a78bfa;
+  margin: 0 0 4px 0;
+}
+
+.edu-date {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin: 2px 0;
+}
+
+.edu-status {
+  background: #14532d;
+  color: #22c55e;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+  width: fit-content;
+}
+
+/* RIGHT SIDE */
+.edu-body {
+  flex: 2;
+  text-align: left;  
+}
+
+.edu-body h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+}
+
+.edu-body p {
+  color: #ccc;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.edu-body h4 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #d8b4fe;
+  font-weight: 600;
+}
+
+.edu-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.edu-body ul li {
+  margin: 8px 0;
+  position: relative;
+  padding-left: 24px;
+}
+
+.edu-body ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* chip tag */
+.tags span {
+  background: #6d28d9;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1;
+  display: inline-flex;           
+  align-items: center;
+  cursor: pointer;               
+  transition: background .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.tags span:hover,
+.tags span:focus-visible {
+  background: #fff;
+  color: #6d28d9;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  outline: none;
+}
+
+/* feedback klik (opsional) */
+.tags span:active {
+  transform: translateY(0);
+}

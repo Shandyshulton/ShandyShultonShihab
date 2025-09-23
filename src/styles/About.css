@@ -1,0 +1,119 @@
+:root {
+  --about-in: 900ms;     
+  --about-out: 700ms;    
+  --ease-in: cubic-bezier(.22,.61,.36,1);
+  --ease-out: cubic-bezier(.4,0,.2,1);
+}
+
+#about {
+  background-color: #eaedef;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+#about > .wrapper {
+  margin: auto;
+  width: 50%;
+}
+
+.about-anim-root > h3 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  color: #333;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.about-anim-root > p {
+  text-align: center;
+}
+
+.about-anim-root > h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 5px;
+  color: #333;
+}
+
+.skills {
+  text-align: center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity var(--about-in) var(--ease-in),
+    transform var(--about-in) var(--ease-in);
+  will-change: opacity, transform;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.out {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition:
+    opacity var(--about-out) var(--ease-out),
+    transform var(--about-out) var(--ease-out);
+}
+
+.skill-icon,
+.skills > svg {
+  display: inline-block;
+  color: #74797e;
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(12px) scale(.98);
+  transition:
+    opacity calc(var(--about-in) - 100ms) var(--ease-in),
+    transform calc(var(--about-in) - 100ms) var(--ease-in);
+  will-change: opacity, transform;
+}
+
+.skill-icon.in,
+.skills > svg.in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.skill-icon.out,
+.skills > svg.out {
+  opacity: 0;
+  transform: translateY(-8px) scale(.98);
+  transition:
+    opacity calc(var(--about-out) - 100ms) var(--ease-out),
+    transform calc(var(--about-out) - 100ms) var(--ease-out);
+}
+
+.skills > svg:hover,
+.skill-icon:hover {
+  color: #aa392d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .skill-icon,
+  .skills > svg {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #about > .wrapper { width: 80%; }
+}
