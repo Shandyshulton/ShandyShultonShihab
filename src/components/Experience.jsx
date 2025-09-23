@@ -1,7 +1,11 @@
-import "../styles/Experience.css";
+import "../styles/Experience.css"; // Import CSS
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { motion } from "framer-motion";
+
+// Import gambar
+import experienceImage1 from '../assets/digiup/SHANDY SHULTON SHIHAB_Portfolio(1).png';
+import experienceImage2 from '../assets/magang/magang.png';
 
 const cardVariants = {
   hiddenLeft: { opacity: 0, x: -150 },
@@ -31,7 +35,7 @@ const Experience = () => {
             viewport={{ once: false, amount: 0.2 }} 
           >
             <img
-              src="/src/assets/SHANDY SHULTON SHIHAB_Portfolio(1).png"
+              src={experienceImage1}  // Gambar yang diimpor
               alt="Modern Web Development"
               className="card-image"
             />
@@ -68,7 +72,7 @@ const Experience = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <img
-              src="/src/assets/magang.png"
+              src={experienceImage2}  // Gambar yang diimpor
               alt="Digital Content Internship"
               className="card-image"
             />
