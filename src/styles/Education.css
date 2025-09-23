@@ -8,9 +8,10 @@
   will-change: transform, opacity, filter;
   overflow: hidden;
   max-width: 1100px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   gap: 40px;
   text-align: left;
+  width: 100%; /* Ensure card width doesn't overflow */
 }
 
 /* LEFT SIDE */
@@ -112,7 +113,7 @@
   background: #fff;
   color: #6d28d9;
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
   outline: none;
 }
 
@@ -127,6 +128,7 @@
     flex-direction: column;  /* Membuat card menjadi kolom pada layar tablet */
     gap: 20px;
     padding: 18px;
+    width: 100%; /* Ensure cards do not overflow */
   }
 
   .edu-header,
@@ -151,6 +153,7 @@
   /* Menyesuaikan ukuran pada perangkat mobile */
   .education-card {
     padding: 15px; /* Mengurangi padding untuk mobile */
+    width: 100%; /* Ensure card takes full width on mobile */
   }
 
   .edu-header h2 {

@@ -9,11 +9,13 @@
   background-color: #eaedef;
   position: relative;
   font-size: 1.2rem;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 #about > .wrapper {
   margin: auto;
   width: 50%;
+  padding: 0 15px; /* Add some padding for smaller screens */
 }
 
 .about-anim-root > h3 {
@@ -104,16 +106,7 @@
   color: #aa392d;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .reveal,
-  .skill-icon,
-  .skills > svg {
-    transition: none !important;
-    transform: none !important;
-    opacity: 1 !important;
-  }
-}
-
+/* Mobile Responsiveness for Medium Screens */
 @media only screen and (max-width: 1000px) {
   #about > .wrapper { 
     width: 80%; /* Adjusted for tablet */
@@ -142,6 +135,7 @@
   }
 }
 
+/* Mobile First (Small screens) */
 @media only screen and (max-width: 600px) {
   #about > .wrapper {
     width: 90%; /* Full width for small screens */
@@ -177,5 +171,10 @@
   .learn-more-btn {
     padding: 10px 20px;
     font-size: 1rem;
+  }
+
+  /* Ensuring that the header does not overflow */
+  #about {
+    overflow-x: hidden; /* Prevent horizontal scroll */
   }
 }
