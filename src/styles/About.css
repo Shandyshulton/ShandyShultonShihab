@@ -115,5 +115,67 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  #about > .wrapper { width: 80%; }
+  #about > .wrapper { 
+    width: 80%; /* Adjusted for tablet */
+  }
+
+  .about-anim-root > h3 {
+    font-size: 2.2rem; /* Adjust font size */
+  }
+
+  .about-anim-root > h4 {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+
+  .skills > svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skills {
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #about > .wrapper {
+    width: 90%; /* Full width for small screens */
+  }
+
+  .about-anim-root > h3 {
+    font-size: 1.8rem; /* Smaller font size on mobile */
+    line-height: 2.2rem;
+  }
+
+  .about-anim-root > p {
+    font-size: 1rem; /* Smaller font for mobile */
+  }
+
+  .about-anim-root > h4 {
+    font-size: 1rem;
+  }
+
+  .skills > svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skill-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skills {
+    gap: 10px; /* Smaller gap on mobile */
+  }
+
+  .learn-more-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
 }

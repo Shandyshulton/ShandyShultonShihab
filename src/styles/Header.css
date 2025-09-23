@@ -28,7 +28,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  contain: layout paint; 
+  contain: layout paint;
 }
 
 .profile-img {
@@ -158,19 +158,7 @@
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .profile-img,
-  .header-jumbotron > h3,
-  .header-jumbotron > p,
-  .socialMedia,
-  .learn-more-btn,
-  .header-section {
-    transition: none !important;
-    transform: none !important;
-    opacity: 1 !important;
-  }
-}
-
+/* Mobile Responsiveness for Medium Screens */
 @media only screen and (max-width: 1000px) {
   .header-jumbotron > h3 {
     font-size: 2.5rem;
@@ -178,12 +166,12 @@
   }
 
   .socialMedia > a {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
   }
 
   .socialMedia > a > svg {
-    height: 25px;
+    height: 28px;
   }
 
   .profile-img {

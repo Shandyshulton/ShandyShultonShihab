@@ -107,12 +107,12 @@ function TechTags({ tech = [] }) {
 }
 
 export default function Portfolio() {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("All");
 
   const categories = ["All", ...new Set(portfolioList.map((i) => i.category))];
 
   const filteredList =
-    filter === "all"
+    filter === "All"
       ? portfolioList
       : portfolioList.filter((item) => item.category === filter);
 

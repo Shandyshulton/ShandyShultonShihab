@@ -153,9 +153,65 @@
   color: #111827;
 }
 
+/* Desktop */
 @media (min-width: 1280px) {
   .pf-media { height: 220px; }
 }
+
+/* Tablet and Mobile */
+@media (max-width: 1024px) {
+  /* Adjust swiper settings for medium screens */
+  .swiper {
+    padding-bottom: 24px;
+  }
+
+  #portfolio .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pf-card {
+    padding: 12px;
+  }
+
+  .pf-media {
+    height: 180px; /* Slightly smaller images for tablet/mobile */
+  }
+
+  .pf-title {
+    font-size: 1.2rem; /* Smaller title font for mobile */
+  }
+  
+  .pf-desc {
+    font-size: .9rem; /* Smaller description font for mobile */
+  }
+}
+
 @media (max-width: 480px) {
-  .pf-media { height: 180px; }
+  /* Adjust swiper settings for mobile screens */
+  .pf-media {
+    height: 160px;
+  }
+
+  .pf-card {
+    padding: 10px;
+  }
+
+  .pf-title {
+    font-size: 1.1rem; /* Even smaller font for mobile */
+  }
+
+  .pf-desc {
+    font-size: .85rem;
+  }
+
+  .card-tags {
+    gap: 5px;
+  }
+
+  .tag {
+    padding: 5px 8px;
+    font-size: .75rem;
+  }
 }
