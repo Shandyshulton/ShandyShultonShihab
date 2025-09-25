@@ -4,9 +4,10 @@ footer {
   line-height: 100px;
   color: #fff;
   letter-spacing: 5px;
-  padding: 20px 0; /* Add padding for better spacing */
+  padding: 20px 0; /* Added padding for better spacing */
 }
 
+/* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
   footer {
     line-height: 80px; /* Adjust line height for smaller screens */

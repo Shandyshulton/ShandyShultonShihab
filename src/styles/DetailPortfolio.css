@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
 /* Container */
 #detail-portfolio {
   padding: 28px 0 56px;

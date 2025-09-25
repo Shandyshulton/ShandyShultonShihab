@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
 :root {
   --about-in: 900ms;     
   --about-out: 700ms;    
@@ -12,10 +16,11 @@
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+/* Wrapper with padding for responsiveness */
 #about > .wrapper {
   margin: auto;
   width: 50%;
-  padding: 0 15px; /* Add some padding for smaller screens */
+  padding: 0 15px; /* Added padding for smaller screens */
 }
 
 .about-anim-root > h3 {
@@ -106,18 +111,18 @@
   color: #aa392d;
 }
 
-/* Mobile Responsiveness for Medium Screens */
-@media only screen and (max-width: 1000px) {
+/* Mobile Responsiveness for Medium Screens (Tablet) */
+@media only screen and (max-width: 768px) {
   #about > .wrapper { 
     width: 80%; /* Adjusted for tablet */
   }
 
   .about-anim-root > h3 {
-    font-size: 2.2rem; /* Adjust font size */
+    font-size: 2.2rem; /* Adjust font size for tablet */
   }
 
   .about-anim-root > h4 {
-    font-size: 1.2rem; /* Adjust font size */
+    font-size: 1.2rem; /* Adjust font size for tablet */
   }
 
   .skills > svg {
@@ -136,7 +141,7 @@
 }
 
 /* Mobile First (Small screens) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   #about > .wrapper {
     width: 90%; /* Full width for small screens */
   }

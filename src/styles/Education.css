@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
 .education-card {
   display: flex;
   background: linear-gradient(to right, #0e1425, #2c4478);
@@ -123,7 +127,9 @@
 }
 
 /* Responsivitas untuk Mobile dan Tablet */
-@media only screen and (max-width: 1024px) {
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
   .education-card {
     flex-direction: column;  /* Membuat card menjadi kolom pada layar tablet */
     gap: 20px;
@@ -133,7 +139,7 @@
 
   .edu-header,
   .edu-body {
-    text-align: center; /* Menyelaraskan teks ke tengah di tablet */
+    text-align: center; /* Menyelarakan teks ke tengah di tablet */
   }
 
   .edu-body h3 {
@@ -149,8 +155,8 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  /* Menyesuaikan ukuran pada perangkat mobile */
+/* Mobile */
+@media only screen and (max-width: 480px) {
   .education-card {
     padding: 15px; /* Mengurangi padding untuk mobile */
     width: 100%; /* Ensure card takes full width on mobile */

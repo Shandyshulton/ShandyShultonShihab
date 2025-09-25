@@ -1,7 +1,11 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
 #experience {
   background-color: #f5f5f5;
   padding: 60px 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .wrapper {
@@ -100,14 +104,14 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 1024px) {
+/* Mobile Responsiveness (Tablet) */
+@media (max-width: 768px) {
   .wrapper {
-    width: 90%;  /* Adjust wrapper width on tablets */
+    width: 90%; /* Adjust wrapper width on tablets */
   }
 
   .experience-card {
-    width: 350px;  /* Reduce card width on medium screens */
+    width: 350px; /* Reduce card width on medium screens */
     padding: 15px;
   }
 
@@ -138,7 +142,8 @@ h1 {
   }
 }
 
-@media (max-width: 768px) {
+/* Mobile First (Small screens) */
+@media (max-width: 480px) {
   .experience-card-container {
     flex-direction: column;
     align-items: center;
@@ -170,9 +175,7 @@ h1 {
     font-size: 0.75rem;  /* Smaller tag font size */
     padding: 5px 10px;
   }
-}
 
-@media (max-width: 480px) {
   h1 {
     font-size: 2rem;  /* Smaller heading for mobile */
   }
@@ -193,10 +196,5 @@ h1 {
 
   .card-image {
     height: 120px;  /* Adjust image height for mobile */
-  }
-
-  .tag {
-    font-size: 0.7rem;  /* Adjust tag font size further */
-    padding: 4px 8px;
   }
 }

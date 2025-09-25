@@ -1,7 +1,11 @@
+body {
+  overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
 /* Container */
 #portfolio {
   padding: 40px 0 64px;
-  overflow-x: hidden;  /* Menghindari scroll horizontal */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 #portfolio .wrapper {
@@ -175,37 +179,32 @@
   color: #111827;
 }
 
-/* Desktop */
-@media (min-width: 1280px) {
-  .pf-media { height: 220px; }
-}
-
 /* Tablet and Mobile */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .swiper {
-    padding-bottom: 24px;
+    padding-bottom: 24px; /* Adjust swiper padding for tablet */
   }
 
   #portfolio .swiper-slide {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center align the content */
   }
 
   .pf-card {
-    padding: 12px;
+    padding: 12px;  /* Adjust padding for tablet */
   }
 
   .pf-media {
-    height: 180px; /* Slightly smaller images for tablet/mobile */
+    height: 180px; /* Slightly smaller images for tablet */
   }
 
   .pf-title {
-    font-size: 1.2rem; /* Smaller title font for mobile */
+    font-size: 1.2rem; /* Smaller title font for tablet */
   }
 
   .pf-desc {
-    font-size: .9rem; /* Smaller description font for mobile */
+    font-size: .9rem; /* Smaller description font for tablet */
   }
 }
 
@@ -215,7 +214,7 @@
   }
 
   .pf-card {
-    padding: 10px;
+    padding: 10px; /* Adjust padding for mobile */
   }
 
   .pf-title {
@@ -223,16 +222,16 @@
   }
 
   .pf-desc {
-    font-size: .85rem;
+    font-size: .85rem; /* Smaller font size for mobile */
   }
 
   .card-tags {
-    gap: 5px;
+    gap: 5px; /* Reduce gap for mobile */
   }
 
   .tag {
     padding: 5px 8px;
-    font-size: .75rem;
+    font-size: .75rem; /* Smaller tag font for mobile */
   }
 
   /* Disable horizontal scroll */
