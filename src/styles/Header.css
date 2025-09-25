@@ -117,6 +117,8 @@ header.leaving {
 
 .learn-more-btn{
   border-radius: 30px;
+  width: 85px;
+  height: 50px;
   cursor: pointer;
   font-family: "Kanit", sans-serif;
   transition: opacity 0.8s ease-out 0.8s, transform 0.8s ease-out 0.8s, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;

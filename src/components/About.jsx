@@ -37,20 +37,18 @@ function About() {
           </h3>
 
           <p className={`reveal ${inView ? "in" : "out"}`} style={d(1 * BASE)}>
-            Hello, I'm Shandy Shulton Shihab, a 20-year-old with a passion for
-            web development and horse riding. I enjoy building websites and have
-            hands-on experience using HTML, CSS, Javascript, Bootstrap, and the
-            Laravel framework, backed by MySQL databases.
+            Hello, I'm Shandy, a 20-year-old passionate about web development
+            and horse riding. I have hands-on experience with HTML, CSS,
+            JavaScript, Bootstrap, Laravel, and MySQL.
           </p>
 
           <p className={`reveal ${inView ? "in" : "out"}`} style={d(2 * BASE)}>
-            Outside of web development, I am also an avid horse rider, which
-            helps me build patience and focus. I am constantly exploring new
-            technologies and looking for opportunities to grow professionally. I
-            am enthusiastic about learning, collaborating with teams, and
-            applying my skills to create impactful and user-friendly digital
-            solutions. I have previously taken an English course for employees
-            at LIA to further enhance my language skills.
+            I am committed to continuously learning and growing, not only in mastering the latest technologies but also in enhancing my communication and collaboration skills.
+          </p>
+
+          <p className={`reveal ${inView ? "in" : "out"}`} style={d(3 * BASE)}>
+            I have also completed an English course at LIA to enhance my
+            communication skills.
           </p>
 
           <h4 className={`reveal ${inView ? "in" : "out"}`} style={d(3 * BASE)}>
@@ -58,13 +56,34 @@ function About() {
           </h4>
 
           <div className="skills">
-            <FaHtml5          className={`skill-icon ${inView ? "in" : "out"}`} style={d(4 * BASE)} />
-            <FaCss3Alt        className={`skill-icon ${inView ? "in" : "out"}`} style={d(5 * BASE)} />
-            <IoLogoJavascript className={`skill-icon ${inView ? "in" : "out"}`} style={d(6 * BASE)} />
-            <SiPhp            className={`skill-icon ${inView ? "in" : "out"}`} style={d(7 * BASE)} />
-            <FaBootstrap      className={`skill-icon ${inView ? "in" : "out"}`} style={d(8 * BASE)} />
-            <FaLaravel        className={`skill-icon ${inView ? "in" : "out"}`} style={d(9 * BASE)} />
-            <SiMysql          className={`skill-icon ${inView ? "in" : "out"}`} style={d(10 * BASE)} />
+            <FaHtml5
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(4 * BASE)}
+            />
+            <FaCss3Alt
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(5 * BASE)}
+            />
+            <IoLogoJavascript
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(6 * BASE)}
+            />
+            <SiPhp
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(7 * BASE)}
+            />
+            <FaBootstrap
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(8 * BASE)}
+            />
+            <FaLaravel
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(9 * BASE)}
+            />
+            <SiMysql
+              className={`skill-icon ${inView ? "in" : "out"}`}
+              style={d(10 * BASE)}
+            />
           </div>
         </div>
       </div>
