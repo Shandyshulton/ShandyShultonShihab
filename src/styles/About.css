@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 :root {
@@ -13,14 +13,13 @@ body {
   background-color: #eaedef;
   position: relative;
   font-size: 1.2rem;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
-/* Wrapper with padding for responsiveness */
 #about > .wrapper {
   margin: auto;
   width: 50%;
-  padding: 0 15px; /* Added padding for smaller screens */
+  padding: 0 15px; 
 }
 
 .about-anim-root > h3 {
@@ -114,15 +113,15 @@ body {
 /* Mobile Responsiveness for Medium Screens (Tablet) */
 @media only screen and (max-width: 768px) {
   #about > .wrapper { 
-    width: 80%; /* Adjusted for tablet */
+    width: 80%;
   }
 
   .about-anim-root > h3 {
-    font-size: 2.2rem; /* Adjust font size for tablet */
+    font-size: 2.2rem; 
   }
 
   .about-anim-root > h4 {
-    font-size: 1.2rem; /* Adjust font size for tablet */
+    font-size: 1.2rem; 
   }
 
   .skills > svg {
@@ -143,16 +142,16 @@ body {
 /* Mobile First (Small screens) */
 @media only screen and (max-width: 480px) {
   #about > .wrapper {
-    width: 90%; /* Full width for small screens */
+    width: 90%; 
   }
 
   .about-anim-root > h3 {
-    font-size: 1.8rem; /* Smaller font size on mobile */
+    font-size: 1.8rem; 
     line-height: 2.2rem;
   }
 
   .about-anim-root > p {
-    font-size: 1rem; /* Smaller font for mobile */
+    font-size: 1rem; 
   }
 
   .about-anim-root > h4 {
@@ -170,7 +169,7 @@ body {
   }
 
   .skills {
-    gap: 10px; /* Smaller gap on mobile */
+    gap: 10px; 
   }
 
   .learn-more-btn {
@@ -180,6 +179,6 @@ body {
 
   /* Ensuring that the header does not overflow */
   #about {
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; 
   }
 }

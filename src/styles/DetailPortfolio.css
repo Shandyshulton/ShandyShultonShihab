@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 /* Container */
@@ -29,7 +29,7 @@ body {
 }
 @media (max-width: 980px) {
   .dp-grid {
-    grid-template-columns: 1fr; /* Stack content in one column on smaller screens */
+    grid-template-columns: 1fr; 
   }
 }
 
@@ -167,11 +167,11 @@ body {
 @media only screen and (max-width: 768px) {
   /* Adjusting wrapper for mobile */
   .dp-wrapper {
-    width: 90%; /* Make the wrapper full width */
+    width: 90%; 
   }
 
   .dp-title {
-    font-size: 1.8rem; /* Slightly smaller title on mobile */
+    font-size: 1.8rem; 
   }
 
   /* Stack grid in single column on small screens */
@@ -190,11 +190,11 @@ body {
   }
 
   .dp-section h3 {
-    font-size: 1rem; /* Smaller subheading font */
+    font-size: 1rem;
   }
 
   .dp-section p {
-    font-size: 0.9rem; /* Smaller paragraph font */
+    font-size: 0.9rem; 
   }
 
   .dp-btn {
@@ -206,11 +206,11 @@ body {
 /* Mobile First (Small screens) */
 @media only screen and (max-width: 480px) {
   .dp-title {
-    font-size: 1.5rem; /* Smaller title font on very small screens */
+    font-size: 1.5rem; 
   }
 
   .dp-media {
-    height: 150px; /* Adjust image height further */
+    height: 150px;
   }
 
   .dp-btn {

@@ -1,26 +1,32 @@
+/* Navbar Styles */
 nav {
   background: radial-gradient(circle at center, #2c4478, #3b5689 100%);
   border-color: #fff;
   color: #fff;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000; 
   text-transform: uppercase;
+  width: 100%; 
+  padding: 10px 20px; 
+  box-sizing: border-box; 
 }
+
+/* Wrapper untuk Navbar */
 nav > .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.menu {
-  width: 35%;
-}
-
+/* Styling untuk Logo */
 .logo {
   display: flex;
   align-items: center;
 }
+
 .logo > a {
   color: #fff;
   text-decoration: none;
@@ -28,62 +34,87 @@ nav > .wrapper {
   font-weight: 900;
   letter-spacing: 8px;
 }
+
+/* Styling untuk Menu */
+.menu {
+  width: 35%; 
+}
+
 .menu > ul {
   display: flex;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   justify-content: space-between;
 }
 
 .menu > ul > li > a {
   text-decoration: none;
   color: #fff;
+  padding: 12px 20px; 
+  display: block; 
 }
+
 nav > .wrapper > button {
   cursor: pointer;
-  display: none;
+  display: none; 
   position: absolute;
-  right: 10px;
-  top: 10px;
-  border: 0px;
+  right: 20px;
+  top: 20px;
+  border: none;
   background-color: transparent;
-  padding: 0px;
+  padding: 0;
 }
+
 nav > .wrapper > button > svg {
   color: #fff;
-  font-size: 50px;
+  font-size: 40px; 
 }
+
+/* Media Query untuk Layar Kecil (Mobile) */
 @media only screen and (max-width: 1000px) {
   .menu > ul {
     display: none;
   }
+
+  /* Menampilkan menu saat tombol hamburger diklik */
   .menu.tampil > ul {
-    display: inline;
+    display: block;
   }
+
   .menu {
     text-align: right;
   }
+
+  /* Menampilkan tombol hamburger */
   nav > .wrapper > button {
-    display: inline;
+    display: inline-block;
   }
+
+  /* Styling menu saat tampil di layar kecil */
   .menu > ul {
     flex-direction: column;
     background-color: #000;
     width: 100%;
     position: fixed;
-    top: 70px;
+    top: 70px; 
     left: 0;
+    padding-top: 20px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
   }
+
   .menu > ul > li {
     text-align: left;
     cursor: pointer;
-  }
-  .menu > ul > li > a {
-    display: inline-block;
-    padding: 15px 20px 15px 50px;
     width: 100%;
   }
+
+  .menu > ul > li > a {
+    padding: 15px 20px;
+    width: 100%;
+    display: block; 
+  }
+
   .menu > ul > li > a:hover {
     background-color: #222831;
   }

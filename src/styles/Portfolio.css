@@ -1,11 +1,11 @@
 body {
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 /* Container */
 #portfolio {
   padding: 40px 0 64px;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
 }
 
 #portfolio .wrapper {
@@ -182,29 +182,29 @@ body {
 /* Tablet and Mobile */
 @media (max-width: 768px) {
   .swiper {
-    padding-bottom: 24px; /* Adjust swiper padding for tablet */
+    padding-bottom: 24px; 
   }
 
   #portfolio .swiper-slide {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align the content */
+    align-items: center; 
   }
 
   .pf-card {
-    padding: 12px;  /* Adjust padding for tablet */
+    padding: 12px;  
   }
 
   .pf-media {
-    height: 180px; /* Slightly smaller images for tablet */
+    height: 180px; 
   }
 
   .pf-title {
-    font-size: 1.2rem; /* Smaller title font for tablet */
+    font-size: 1.2rem;
   }
 
   .pf-desc {
-    font-size: .9rem; /* Smaller description font for tablet */
+    font-size: .9rem; 
   }
 }
 
@@ -214,24 +214,24 @@ body {
   }
 
   .pf-card {
-    padding: 10px; /* Adjust padding for mobile */
+    padding: 10px; 
   }
 
   .pf-title {
-    font-size: 1.1rem; /* Even smaller font for mobile */
+    font-size: 1.1rem; 
   }
 
   .pf-desc {
-    font-size: .85rem; /* Smaller font size for mobile */
+    font-size: .85rem; 
   }
 
   .card-tags {
-    gap: 5px; /* Reduce gap for mobile */
+    gap: 5px; 
   }
 
   .tag {
     padding: 5px 8px;
-    font-size: .75rem; /* Smaller tag font for mobile */
+    font-size: .75rem; 
   }
 
   /* Disable horizontal scroll */

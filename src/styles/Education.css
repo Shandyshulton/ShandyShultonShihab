@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-x: hidden; 
 }
 
 .education-card {
@@ -15,7 +15,7 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   gap: 40px;
   text-align: left;
-  width: 100%; /* Ensure card width doesn't overflow */
+  width: 100%; 
 }
 
 /* LEFT SIDE */
@@ -121,73 +121,71 @@ body {
   outline: none;
 }
 
-/* feedback klik (opsional) */
+/* feedback klik */
 .tags span:active {
   transform: translateY(0);
 }
 
-/* Responsivitas untuk Mobile dan Tablet */
-
 /* Tablet */
 @media only screen and (max-width: 768px) {
   .education-card {
-    flex-direction: column;  /* Membuat card menjadi kolom pada layar tablet */
+    flex-direction: column;  
     gap: 20px;
     padding: 18px;
-    width: 100%; /* Ensure cards do not overflow */
+    width: 100%;
   }
 
   .edu-header,
   .edu-body {
-    text-align: center; /* Menyelarakan teks ke tengah di tablet */
+    text-align: center; 
   }
 
   .edu-body h3 {
-    font-size: 1.1rem; /* Menyesuaikan ukuran font pada layar kecil */
+    font-size: 1.1rem;
   }
 
   .edu-body p {
-    font-size: 1rem; /* Menyesuaikan ukuran font pada layar kecil */
+    font-size: 1rem;
   }
 
   .tags {
-    justify-content: center; /* Menyelaraskan tag ke tengah */
+    justify-content: center; 
   }
 }
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
   .education-card {
-    padding: 15px; /* Mengurangi padding untuk mobile */
-    width: 100%; /* Ensure card takes full width on mobile */
+    padding: 15px; 
+    width: 100%; 
   }
 
   .edu-header h2 {
-    font-size: 1.6rem; /* Ukuran font yang lebih kecil untuk judul di mobile */
+    font-size: 1.6rem; 
   }
 
   .edu-date {
-    font-size: 0.8rem; /* Mengurangi ukuran font pada tanggal */
+    font-size: 0.8rem; 
   }
 
   .edu-status {
-    font-size: 0.8rem; /* Mengurangi ukuran font status */
+    font-size: 0.8rem; 
   }
 
   .edu-body h3 {
-    font-size: 1rem; /* Menyesuaikan ukuran font pada sub-judul */
+    font-size: 1rem; 
   }
 
   .edu-body p {
-    font-size: 0.9rem; /* Mengurangi ukuran font deskripsi */
+    font-size: 0.9rem; 
   }
 
   .tags span {
-    font-size: 0.75rem; /* Ukuran font lebih kecil untuk tag */
+    font-size: 0.75rem;
     padding: 5px 10px;
   }
 
   .tags {
-    gap: 6px; /* Mengurangi gap antara tag */
+    gap: 6px; 
   }
 }

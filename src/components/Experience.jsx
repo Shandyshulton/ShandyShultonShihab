@@ -35,7 +35,7 @@ const Experience = () => {
             viewport={{ once: false, amount: 0.2 }} 
           >
             <img
-              src={experienceImage1}  // Gambar yang diimpor
+              src={experienceImage1}  
               alt="Modern Web Development"
               className="card-image"
             />
@@ -72,7 +72,7 @@ const Experience = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <img
-              src={experienceImage2}  // Gambar yang diimpor
+              src={experienceImage2}  
               alt="Digital Content Internship"
               className="card-image"
             />

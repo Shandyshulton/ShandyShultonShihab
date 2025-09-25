@@ -9,16 +9,16 @@
 }
 
 .status-badge.completed {
-  background: #dcfce7; /* soft green */
-  color: #065f46;      /* dark green */
+  background: #dcfce7; 
+  color: #065f46;      
 }
 
 .status-badge.in-progress {
-  background: #fef3c7; /* soft yellow */
-  color: #92400e;      /* dark yellow */
+  background: #fef3c7; 
+  color: #92400e;      
 }
 
 .status-badge.not-completed {
-  background: #fee2e2; /* soft red */
-  color: #b91c1c;      /* dark red */
+  background: #fee2e2; 
+  color: #b91c1c;      
 }

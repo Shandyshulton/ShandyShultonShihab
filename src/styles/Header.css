@@ -7,8 +7,8 @@ header {
   font-family: "Kanit", sans-serif;
   letter-spacing: 5px;
   text-shadow: 0 0 4px #000;
-  opacity: 0;  /* Mulai dengan opacity 0 */
-  transform: translateY(30px); /* Memulai posisi dari bawah */
+  opacity: 0;  
+  transform: translateY(30px); 
   transition: transform 1s ease, opacity 1s ease;
 }
 
@@ -22,7 +22,7 @@ header.visible {
 /* Animasi ketika header menghilang (fade-out + slide-out) */
 header.leaving {
   opacity: 0;
-  transform: translateY(-30px); /* Header bergerak ke atas dan hilang */
+  transform: translateY(-30px); 
   animation: fadeOutUp 1s ease-in forwards;
 }
 
@@ -117,7 +117,7 @@ header.leaving {
 
 .learn-more-btn{
   border-radius: 30px;
-  width: 85px;
+  width: 125px;
   height: 50px;
   cursor: pointer;
   font-family: "Kanit", sans-serif;

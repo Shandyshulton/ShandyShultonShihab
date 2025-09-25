@@ -4,21 +4,21 @@ footer {
   line-height: 100px;
   color: #fff;
   letter-spacing: 5px;
-  padding: 20px 0; /* Added padding for better spacing */
+  padding: 20px 0; 
 }
 
 /* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
   footer {
-    line-height: 80px; /* Adjust line height for smaller screens */
-    font-size: 0.9rem; /* Slightly smaller font on tablets */
+    line-height: 80px; 
+    font-size: 0.9rem; 
   }
 }
 
 @media only screen and (max-width: 480px) {
   footer {
-    line-height: 60px; /* Adjust line height for mobile screens */
-    font-size: 0.8rem; /* Slightly smaller font on mobile */
-    padding: 15px 0; /* Adjust padding for better space on mobile */
+    line-height: 60px; 
+    font-size: 0.8rem; 
+    padding: 15px 0; 
   }
 }
